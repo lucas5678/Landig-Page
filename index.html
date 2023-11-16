@@ -85,9 +85,9 @@
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5 container-fluid p-0">
-                        <div class="mb-2"><i class="bi bi-phone fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">App Mobile</h3>
-                            <p class="text-muted mb-0">Toda sua gestão na palma de sua mão</p>
+                        <div class="mb-2"><i id="appMobile" class="bi bi-phone fs-1 text-primary"></i></div>
+                        <h3 id="appMobile" class="h4 mb-2">App Mobile</h3>
+                        <p id="appMobile" class="text-muted mb-0">Toda sua gestão na palma de sua mão</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -136,7 +136,8 @@
             <div class="row g-0">
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/parceiros/musa.jpg" title="Musa">
-                        <img class="img-fluid" style="height:240px; width: 430px;" src="assets/img/parceiros/musa.jpg" alt="..." />
+                        <img class="img-fluid" style="height:240px; width: 430px;" src="assets/img/parceiros/musa.jpg"
+                            alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">Cervejaria</div>
                             <div class="project-name">MusaAgro Industrial</div>
@@ -146,7 +147,8 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/parceiros/parceria.jpg">
-                        <img class="img-fluid" style="height:240px; width: 430px;" src="assets/img/parceiros/parceria.jpg" alt="..." />
+                        <img class="img-fluid" style="height:240px; width: 430px;"
+                            src="assets/img/parceiros/parceria.jpg" alt="..." />
                         <div class="portfolio-box-caption p-3">
                             <div class="project-category text-white-50">Você</div>
                             <div class="project-name">Seja um Parceiro DivTech</div>
@@ -242,6 +244,28 @@
             </div>
         </div>
     </section>
+    <!----------------DADOS DO MODAL-->
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>App Mobile</h2>
+        <img id="closeModal" src="assets/img/marca-cruzada.png" style="width: 30px; height: 30px;">
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
+          Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
+          voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
+          repellat vel necessitatibus.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius alias
+          voluptate doloremque, totam inventore autem quis non error! Earum
+          ullam fuga, officiis voluptates pariatur unde et adipisci ducimus non
+          obcaecati.
+        </p>
+      </div>
+    </div>
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">

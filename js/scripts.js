@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -56,4 +48,36 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+});
+var appMobile = document.getElementById('appMobile');
+var imgClodemodal = document.getElementById("closeModal")
+
+appMobile.addEventListener('mouseover', function() {
+    appMobile.style.cursor = 'pointer';
+});
+
+appMobile.addEventListener('mouseout', function() {
+    appMobile.style.cursor = 'auto';
+});
+
+imgClodemodal.addEventListener('mouseover', function() {
+    imgClodemodal.style.cursor = 'pointer';
+});
+
+imgClodemodal.addEventListener('mouseout', function() {
+    imgClodemodal.style.cursor = 'auto';
+});
+
+const openModalButton = document.getElementById("appMobile");
+const closeModalButton = document.getElementById("closeModal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+  modal.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
 });
