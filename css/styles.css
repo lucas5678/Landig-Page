@@ -12839,6 +12839,12 @@ header.masthead .h1 {
   opacity: 1;
 }
 
+#efeitoIcone{
+  transition: transform 0.3s ease-in-out;
+}
+#efeitoIcone:hover{
+  transform: translateY(-15px);
+}
 #appMobile {
     cursor: pointer;
 }
