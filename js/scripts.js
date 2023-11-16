@@ -81,3 +81,41 @@ const toggleModal = () => {
 [openModalButton, closeModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
+
+//envio de email
+
+function enviarEmail() {
+
+    var nome = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var message = document.getElementById('message').value;
+
+    var url = 'https://formspree.io/f/xqkvolvg';
+    var data = {
+      name: nome,
+      email: email,
+      phone: phone,
+      message: message
+    };
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Mensagem enviada com sucesso!');
+        } else {
+          alert('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
+        }
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+      });
+    }
+
+
